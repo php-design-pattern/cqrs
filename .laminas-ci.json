@@ -1,8 +1,9 @@
 {
   "ignore_php_platform_requirements": {
+    "5.6": true,
     "7.0": true,
     "7.1": true,
-    "7.2": true,
+    "7.2": false,
     "7.3": true,
     "7.4": true,
     "8.0": true,

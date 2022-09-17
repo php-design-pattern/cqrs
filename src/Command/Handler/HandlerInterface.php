@@ -6,5 +6,5 @@ use DesignPattern\CQRS\Command\CommandInterface;
 
 interface HandlerInterface
 {
-    public function __invoke(CommandInterface $command);
+    public function __invoke(CommandInterface $command): void;
 }
