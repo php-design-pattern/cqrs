@@ -1,0 +1,60 @@
+{
+  "name": "php-design-pattern/cqrs",
+  "type": "library",
+  "description": "Interfaces for the design pattern CQRS",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "design pattern",
+    "cqrs",
+    "interface",
+    "contract"
+  ],
+  "homepage": "https://github.com/php-design-pattern/cqrs",
+  "support": {
+    "email": "github-support@swarmtech.fr"
+  },
+  "config": {
+    "process-timeout": 600,
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "authors": [
+    {
+      "name": "gary gitton",
+      "homepage": "https://www.garygitton.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "DesignPattern\\CQRS\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DesignPatternTest\\CQRS\\": "test/"
+    }
+  },
+  "require": {
+    "php": "^7.3 || ~8.0.0",
+    "php-standard-ietf/rfc5234": "^1.0"
+  },
+  "require-dev": {
+    "laminas/laminas-coding-standard": "^2.3",
+    "phpunit/phpunit": "^9.5",
+    "psalm/plugin-phpunit": "^0.15.1",
+    "vimeo/psalm": "^4.5.2"
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "static-analysis": "psalm --shepherd --stats"
+  }
+}
