@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace DesignPatternTest\CQRS\Query;
 
 use DesignPattern\CQRS\Query\QueryInterface;
@@ -14,7 +12,7 @@ class QueryInterfaceTest extends TestCase
     /**
      * @test
      */
-    public function interfaceExist(): void
+    public function interfaceExist()
     {
         $this->assertTrue(interface_exists(QueryInterface::class));
     }

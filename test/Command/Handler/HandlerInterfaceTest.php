@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace DesignPatternTest\CQRS\Command\Handler;
 
 use DesignPattern\CQRS\Command\Handler\HandlerInterface;
@@ -14,7 +12,7 @@ class HandlerInterfaceTest extends TestCase
     /**
      * @test
      */
-    public function interfaceExist(): void
+    public function interfaceExist()
     {
         $this->assertTrue(interface_exists(HandlerInterface::class));
     }
