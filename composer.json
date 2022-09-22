@@ -1,11 +1,12 @@
 {
   "name": "php-design-pattern/cqrs",
   "type": "library",
-  "description": "Interfaces for the design pattern CQRS",
+  "description": "Basic classes and interfaces for the design pattern CQRS",
   "license": "BSD-3-Clause",
   "keywords": [
     "design pattern",
     "cqrs",
+    "basic classes",
     "interface",
     "contract"
   ],
